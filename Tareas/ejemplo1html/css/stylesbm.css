@@ -1,0 +1,110 @@
+
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+}
+ 
+/* Header */
+header {
+    background-color: #cf3ee6;
+    color: white;
+    padding: 20px; /* padding aplicado  separacion del borde con respecto al texto*/
+    text-align: center;
+    border/*-bottom*/: 4px solid #b61de9; /* borde aplicado */
+    margin-bottom: 20px; /* margen aplicado */
+}
+ 
+/* Contenedor principal */
+.container {
+    float: left;
+    width: 95%;
+    margin:0 auto; /*Centra el contenedor*/
+    /*height: 150px;*/
+    overflow:hidden;
+}
+ 
+/* Sidebar (menu lateral) */
+.sidebar {
+    background-color: #b61de9;
+    color: white; /*Color del texto*/
+    width: 20%; /* ancho fijo */
+    border: 1px solid black;
+    padding: 20px; /* padding dentro del box */
+    border-radius: 8px; /* borde redondeado */
+    /*height: 150px;*/
+    float: left;
+}
+ 
+.sidebar ul {
+    list-style: none;
+}
+ 
+.sidebar ul li {
+    margin-bottom: 15px; /* margen inferior para separar los items */
+}
+ 
+.sidebar ul li a {
+    color: white;
+    text-decoration: none;
+}
+ 
+.sidebar ul li a:hover { /*hover es para identificar cuando el mouse está por encima*/
+    text-decoration: underline;
+}
+ 
+/* Contenido principal */
+.content {
+    width: 70%;
+    margin-left: 20px;
+    background-color: white;
+    float: right;
+    padding: 20px; /* padding aplicado */
+    border: 2px solid #ddd; /* borde aplicado */
+    border-radius: 8px;
+    overflow:hidden;
+}
+
+/*Imagenes*/
+
+.galeria-container {
+    width: 100%;
+    overflow: hidden; 
+    margin-top: 30px; /* Un poco de separación con el texto de arriba */
+}
+ 
+.galeria-item {
+    float: left;        /* Se alinean una al lado de la otra */
+    width: 33.3333%;    /* 1/3 del ancho total */
+    padding: 10px;      /* Espacio entre las tarjetas */
+}
+
+.galeria-item img {
+    width: 70%;        
+    margin: 0 auto;
+    height:300px;       
+    object-fit: contain;
+    display: block;    
+    border: 1px solid #ccc; 
+}
+
+.pie-foto {
+    border: 1px solid #ccc;
+    border-top: none;   
+    padding: 10px;
+    background-color: #fff;
+    text-align: center;
+    font-size: 14px;
+}
+
+/* Footer */
+footer {
+    background-color: #cf3ee6;
+    color: white;
+    text-align: center;
+    padding: 15px; 
+    border-top: 4px solid #b61de9; 
+    margin-top: 20px; 
+    clear:both; /*deshabilita el efecto flotante*/
+}
